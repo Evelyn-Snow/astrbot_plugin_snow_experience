@@ -1,0 +1,63 @@
+{
+  "enabled": {
+    "description": "启用真实经历",
+    "type": "bool",
+    "default": true
+  },
+  "books_dir": {
+    "description": "电子书库目录",
+    "type": "string",
+    "default": "",
+    "hint": "留空 = 插件数据目录 books/；可填任意绝对路径，往里丢 .txt/.md/.epub/.pdf/.docx 她就会优先读"
+  },
+  "papers_dir": {
+    "description": "论文 PDF 存放目录",
+    "type": "string",
+    "default": "",
+    "hint": "她自己找到论文后把 PDF 下到这里；留空 = 插件数据目录 papers/"
+  },
+  "events_dir": {
+    "description": "经历记录目录",
+    "type": "string",
+    "default": "",
+    "hint": "读后感/资料笔记/论文笔记的存放目录；留空 = 插件数据目录 events/"
+  },
+  "topics": {
+    "description": "兴趣关键词池",
+    "type": "string",
+    "default": "",
+    "hint": "逗号分隔（如：天文学,中世纪史,航海）；留空用内置通用池，决定查资料/论文的方向和选书偏好"
+  },
+  "event_window": {
+    "description": "事件触发时段",
+    "type": "string",
+    "default": "10:00-21:00",
+    "hint": "每天在这个时段内按日期种子随机选一个时刻尝试做一件事"
+  },
+  "event_chance": {
+    "description": "每天触发概率",
+    "type": "float",
+    "default": 0.7,
+    "hint": "0-1；即使配额充足也不是每天都做"
+  },
+  "weekly_book": {
+    "description": "每周读书事件上限",
+    "type": "int",
+    "default": 2
+  },
+  "weekly_research": {
+    "description": "每周查资料事件上限",
+    "type": "int",
+    "default": 3
+  },
+  "weekly_paper": {
+    "description": "每周论文检索上限",
+    "type": "int",
+    "default": 1
+  },
+  "inject_limit_chars": {
+    "description": "聊天注入经历的最大字数",
+    "type": "int",
+    "default": 300
+  }
+}

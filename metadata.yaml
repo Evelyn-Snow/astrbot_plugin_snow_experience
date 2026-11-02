@@ -1,0 +1,9 @@
+name: astrbot_plugin_snow_experience
+display_name: Bot 真实经历
+desc: 让机器人拥有真实经历：自主阅读 txt/md/epub/PDF/Word、检索资料、下载并读 arXiv 论文全文（每周限次），经历注入聊天并写进日记
+help: 无需指令；她会自己读书、查资料、看论文，之后聊天里能自然聊起这些经历
+version: v0.2.0
+repo: https://github.com/Evelyn-Snow/astrbot_plugin_snow_experience
+author: Evelyn-Snow
+support_platforms:
+  - aiocqhttp
